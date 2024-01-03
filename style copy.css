@@ -1,0 +1,583 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 150vh; /* 1 vh = 19.2px */
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/Custom\ dimensions\ 15x12\ in.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    opacity: 0.8;
+
+}
+
+.navbar{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(12, 11, 9, 0.4);
+    padding: 10px 150px;
+    
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    /* padding-left: 20px; */
+}
+
+nav ul {
+    display: flex;
+
+}
+
+.navigs{
+    list-style: none;
+    padding: 15px;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+    /* padding: 0px 15px; */
+    /* margin: 0px 15px; */
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+.link:hover{
+    color: #d68213;
+
+}
+
+.banner{
+
+    /* border: 5px solid rgb(255, 20, 52); */
+    width: 65%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.banner h2{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 1px solid #f1a949;
+    padding: 20px;
+    font-size: 50px;
+}
+
+.banner h2 span{
+    color: #ffbd67;
+}
+
+.banner h3{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#heading{
+    
+text-align: center;
+color: #fff;
+font-size: 50px;
+font-family: 'Dancing Script', cursive;
+text-shadow: 15px 15px 10px rgba(0, 0, 0, 0.8);
+
+}
+
+.special{
+
+    /* border: 1px solid #f1a949; */
+    height: 40vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.items{ 
+    width: 60%;
+    height: 50%;
+    border-radius: 50%;
+    border: 5px solid white;
+    /* margin: 10px 25px; */
+    overflow: hidden;
+    transition: width 0.5s, height 0.5s, border-radius 0.5s, padding 0.5s,background-color 0.5s ;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.items:hover{
+    width: 90%;
+    height: 65%;
+    border-radius: 10%;
+    padding: 0px 0px 60px 0px;
+    background-color: white;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* .span_cls{
+    display: inline-block;
+    text-align: center;
+
+} */
+
+/* for the button in the order item  */
+.items span button, .menu_prop button{
+
+    margin-top: 5px;
+    padding: 2px 5px;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    background-color: rgb(236, 147, 31);
+    cursor: pointer;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.7);
+    transition: padding 0.2s, font-size 0.2s ;
+    
+}
+
+.button a, .span_cls button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.items span button:hover, .menu_prop button:hover{
+    padding: 3px 8px;
+    font-size: 15px;
+}
+
+
+.column-item h4{
+    color: #ffffff;
+}
+
+/* For The image */
+.sp_items{
+    display: flex;
+    /* width: 100%;
+    height: 100%; */
+    max-width: 150%;
+    max-height: 150%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Individial spl items */
+.column-item{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 16%;
+    height: 100%;
+    /* border: 1px solid #2dff7e; */
+
+}
+
+.column-item h4{
+    margin-top: 5px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.view-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view_link{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: rgb(236, 147, 31);
+    cursor: pointer;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.7);
+    transition: padding 0.2s, font-size 0.2s ,background-color 0.15s;
+}
+
+.view_link:hover{
+    
+    /* padding: 13px 18px; */
+    background-color: rgb(247, 110, 46);
+
+}
+
+.view_link:active{
+    background-color: rgb(224, 99, 67);
+    color:rgb(255, 255, 255);
+}
+
+#about{
+    /* background-image: url("./Images/ABOUT.jpg"); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/ABOUT.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;   
+
+}
+
+.dv_about{
+    margin-top: 35px;
+    height: 90vh;
+    /* border: 10px solid #ebebeb; */
+    }
+
+.dv_about h1 {
+    /* position: absolute; */
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 150px;
+    text-align: center;
+    padding: 50px;
+} 
+
+.dv_about p {
+    font-family: 'Squada One', cursive;
+    color: #dad8d8;
+    padding: 10px 250px;
+    font-size: 34px;
+    text-align: justify;
+    line-height: 65px;
+}
+
+
+
+.menu_main{
+    margin: 50px 70px;
+}
+
+.menu_div h1{
+    
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    background-color: #e3f0ff;
+    padding: 25px 0px;
+    
+    /* margin-top: 20px; */
+}
+
+.main_span {
+
+    color: rgb(223, 113, 50);
+    font-weight: bolder;
+    font-size: 68;
+    padding-bottom: 5px;
+}
+
+/* .menu .menu_main{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5,0.2fr);
+    grid-gap: 5px;
+   
+} */
+
+.menu_card{
+
+    width: 300px;
+    height: 440px;
+    margin: 50px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    /* border: 5px solid black; */
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+    float: left;
+    
+}
+
+.menu_img{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.menu_img img{
+    
+    border-radius: 5px;
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    transition: 0.25s;
+    
+}
+
+/* .menu_img img:hover{
+    
+} */
+
+.menu_img img:hover{
+
+    transform: scale(1.1);
+
+}
+
+.menu_prop{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.menu_prop h4{
+
+    color: #f09f35;
+    padding-bottom: 10px;
+
+}
+
+.prop p{
+
+    color: #707070;
+    font-size: 15px;
+    height: 50%;
+    text-align: center;
+    
+}
+
+.prop{
+    width: 100%;
+    height: 100px;
+}
+
+.menu_amount{
+
+    color: black;
+    padding: 10px 0px;
+    font-weight: bolder;
+}
+
+.main_reserve{
+    display: grid; /* To display side by side */
+    grid-template-columns: repeat(2,1fr); /* it is 2 div and ifr == 255px */
+    margin-top: 30px;
+    gap: 2rem; /* 1rem is 16px */
+    clear: left;
+    background-color: #9e9e9e;
+    height: 600px;
+}
+
+.main_reserve div{
+    width: 500px;
+    height: 10%;
+    margin: 0px 200px;
+
+}
+
+.div_img img{
+    padding-top: 30px;
+    margin-left: 100px;
+    width: 90%;
+
+}
+
+.order h1{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px; 
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+/* .form_div{
+    padding-top: 150px;
+    width: 90%;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between
+} */
+
+.input{
+    line-height: 25px;
+}
+
+.input input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    background: #eeeeee;
+    outline: none;
+    border-radius: 3px;
+}
+
+.div_order{
+    padding-right: 5000px;
+    margin-right: 1000px;
+    
+}
+
+.div_order .form_div form .input input:focus{
+    border: 2px solid #fac031;
+}
+
+.form_div{
+    padding-top: 100px;
+    padding-right: 2000px;
+}
+
+.form_div form .order_btn{
+    padding: 10px 0;
+    background: #fac031;
+    color: white;
+    width: 40%;
+    text-align: left;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+
+.sub {
+
+    padding-top: 20px;
+    padding-left: 120px;
+}
+
+.sub a{
+    border-radius: 15px;
+    padding: 5px 15px;
+
+}
+
+.sub a:hover{
+    background: #e2ff92;
+    color: #707070;
+}
+
+#contact{
+    background-color: #b1b1b1;
+}
+
+.con_content{
+    margin-top: 2.5rem;
+    display: flex; /* This makes the container a flex container */
+    justify-content: center; /* Center the items (div) horizontally (optional) */
+    align-items: center; /* Center the items (div) vertically */
+
+}
+
+.fa_icn{
+    margin: 0px 25px;
+    height: 50px;
+    width: 50px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 2s;    
+}
+
+.fa_icn i{ 
+    font-size: 30px;
+    color: black
+}
+
+.fa_icn:hover{
+    /* background-image: linear-gradient(145deg, #fcbd11, #ff5e2d); */
+    background-image: linear-gradient(to bottom right, #f7c640, #ff5e2d);
+}
+
+.fa_icn:hover i{
+    color: white;
+    animation: shake 1s; /* Duration and animation type added */
+    /* transform-origin: center; */ /* Set the rotation point to the center */
+}
+@keyframes shake {
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+
+.foot{
+    margin: 3% 0% 30% 0%;
+    text-align: center;
+}
+
+.foot p{
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.uparrow{
+    /* display: flex;
+    justify-content: right; */
+    float: right;
+    font-size: 30px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom right, #f7c640, #ff5e2d);
+    align-items: center;
+}
+
+.uparrow i{
+    transition: color 0.35s;
+}
+
+.uparrow:hover i{
+    color: white;
+    animation: slide 1s ;
+}
+
+@keyframes slide {
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+
+.heading_con{
+    text-align: center;
+    color: #d68213;
+    padding-top: 15px;
+    font-size: 25px;
+}
